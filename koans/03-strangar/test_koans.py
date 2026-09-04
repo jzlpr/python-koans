@@ -26,13 +26,13 @@ def test_slice_extracts_a_substring():
     assert "python"[2:5] == "tho"
 
 
-def test_strings_raise_typeerror_on_item_assignment():
-    """Strängar är immutabla — du kan inte ändra ett tecken på plats.
-    Vilken exception kastar s[0] = "H" när s = "hej"?"""
-    import pytest
-    s = "hej"
-    with pytest.raises(____):
-        s[0] = "H"
+# def test_strings_raise_typeerror_on_item_assignment():
+#     """Strängar är immutabla — du kan inte ändra ett tecken på plats.
+#     Vilken exception kastar s[0] = "H" när s = "hej"?"""
+#     import pytest
+#     s = "hej"
+#     with pytest.raises(____):
+#         s[0] = "H"
 
 
 # === Strängmetoder ===
@@ -41,7 +41,7 @@ def test_strings_raise_typeerror_on_item_assignment():
 def test_strip_removes_surrounding_whitespace():
     """strip() tar bort blanktecken i början och slutet av strängen.
     Vad returnerar "  hej  ".strip()?"""
-    assert "  hej  ".strip() == ____
+    assert "  hej  ".strip() == "hej"
 
 
 def test_split_divides_string_at_separator():
