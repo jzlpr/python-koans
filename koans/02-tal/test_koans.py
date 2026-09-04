@@ -7,13 +7,13 @@ from sentinel import ____
 def test_integer_division_returns_an_int():
     """// är heltalsdivision — resultatet trunkeras mot minus-oändligheten.
     Vilken typ returnerar 7 // 2?"""
-    assert type(7 // 2) == 3
+    assert type(7 // 2) == int
 
 
 def test_regular_division_always_returns_a_float():
     """/ är alltid float-division i Python 3 — även om båda operanderna är heltal.
     Vilken typ returnerar 7 / 2?"""
-    assert type(7 / 2) == 3.5
+    assert type(7 / 2) == float
 
 
 def test_double_star_is_the_exponentiation_operator():
