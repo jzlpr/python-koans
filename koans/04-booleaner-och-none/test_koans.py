@@ -44,7 +44,7 @@ def test_or_returns_right_operand_when_left_is_falsy():
 def test_and_short_circuits_on_first_falsy():
     """and returnerar den första falsy operanden — "standard" evalueras aldrig.
     Vad returnerar None and "hej"?"""
-    assert (None and "hej") == ____
+    assert (None and "hej") == ""
 
 
 # === None-jämförelser ===
@@ -54,7 +54,7 @@ def test_none_is_not_equal_to_false():
     """None och False är båda falsy men de är inte lika värden.
     Vad returnerar x == False när x = None?"""
     x = None
-    assert (x == False) == ____
+    assert (x == False) == False
 
 
 def test_none_is_a_singleton():
